@@ -44,7 +44,6 @@ Pour configurer et utiliser le système de quiz, suivez ces étapes :
 
 2. **Configuration de la base de données, du courrier et de la file d'attente**
     - Configurez les paramètres de votre base de données dans le fichier `.env`.
-    - Configurez les paramètres de votre courrier dans le fichier `.env`.
 
 3. **Création de l'administrateur**
     - Pour créer un administrateur, utilisez la commande suivante :
