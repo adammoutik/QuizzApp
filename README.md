@@ -61,13 +61,13 @@ Pour configurer et utiliser le système de quiz, suivez ces étapes :
       ```
 ## Les nouveaux outils utilisé :
 
-1. **Jobs (Tâches) :**
+1. **Jobs :**
    - *Explication :* Les jobs sont utilisés pour exécuter des tâches en arrière-plan de manière asynchrone, souvent avec des files d'attente pour des opérations longues.
 
-2. **Soft Delete (Suppression douce) :**
+2. **Soft Delete :**
    - *Explication :* La suppression douce marque les enregistrements comme supprimés au lieu de les supprimer réellement, utile pour récupérer des données supprimées si nécessaire.
 
-3. **Middleware Group (Groupe de middleware) :**
+3. **Middleware Group :**
    - *Explication :* Les groupes de middleware regroupent des filtres pour les appliquer à des routes spécifiques, améliorant la modularité et la lisibilité du code.
 
 4. **Création et utilisation de nouveaux middlewares :**
