@@ -14,6 +14,7 @@
                             <th>ID</th>
                             <th>Quiz Title</th>
                             <th>Total Questions</th>
+                            <th>Quiz Duration</th>
                             <th width="20%">Created At</th>
                             <th width="20%">Actions</th>
                         </tr>
@@ -25,6 +26,7 @@
                                 <td>{{ $i++ }}</td>
                                 <td>{{ $quiz->title }}</td>
                                 <td>{{ $quiz->questions->count() }}</td>
+                                <td>{{ $quiz->duration }} minutes</td>
                                 <td>{{ $quiz->created_at }}</td>
                                 <td>
                                     <div class="d-flex justify-content-around">
@@ -64,6 +66,7 @@
                             <th>ID</th>
                             <th>Quiz Title</th>
                             <th>Total Questions</th>
+                            <th>Quiz Duration</th>
                             <th width="20%">Created At</th>
                             <th width="20%">Actions</th>
                         </tr>
@@ -75,6 +78,7 @@
                                 <td>{{ $i++ }}</td>
                                 <td>{{ $quiz->title }}</td>
                                 <td>{{ $quiz->questions->count() }}</td>
+                                <td>{{ $quiz->duration }} minutes</td>
                                 <td>{{ $quiz->created_at }}</td>
                                 <td>
                                     <div class="d-flex justify-content-around">

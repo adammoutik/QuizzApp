@@ -32,7 +32,6 @@ class QuizController extends Controller
      */
     public function store(StoreQuizRequest $request)
     {
-
         $quiz = Quiz::create($request->validated());
         $quiz->delete();
         return redirect()->route('quizzes.show',$quiz->id)->with('success', 'Quiz created successfully.');

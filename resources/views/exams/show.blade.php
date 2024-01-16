@@ -128,7 +128,6 @@
             let deadline = new Date("{{$exam->deadline}}").getTime();
             {{--console.log(deadline,"{{$exam->deadline}}")--}}
             let x = setInterval(function() {
-                //now in UTC +00
                 let now = new Date().getTime()+new Date().getTimezoneOffset()*60*1000;
                 // console.log(now)
                 let t = deadline - now;
@@ -160,7 +159,7 @@
                     },
                     body:JSON.stringify(data)
                 }).then((response) => {
-                    return response.json(); 
+                    return response.json();
                 }).then((data)=>{
                     console.log(data);
                     if(data.message)document.getElementById("message").innerHTML = data.message;

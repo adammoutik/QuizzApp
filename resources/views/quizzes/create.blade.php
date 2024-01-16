@@ -7,12 +7,13 @@
                 <h1>Create Quiz</h1>
                 <hr>
                 @include('partials.flash-message')
-{{--                @include('partials.errors')--}}
                 <form method="POST" action="{{ route('quizzes.store') }}">
                     @csrf
                     <div class="form-group">
                         <label for="title">Name</label>
                         <input type="text" class="form-control" id="title" name="title" value="{{old("title")}}" required>
+                        <label for="title">duration (secondes) :</label>
+                        <input type="text" class="form-control" id="duration" name="duration" value="{{old("duration")}}" required>
                         @error('title')
                         <small class="text-danger">{{ $message }}</small>
                         @enderror

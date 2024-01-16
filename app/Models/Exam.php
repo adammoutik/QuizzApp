@@ -19,7 +19,7 @@ class Exam extends Model
 
     public function quiz()
     {
-        
+
         return $this->belongsTo(Quiz::class)->withTrashed();
     }
 
@@ -39,6 +39,6 @@ class Exam extends Model
     }
 
     public function getDeadlineAttribute(){
-        return $this->ended_at??$this->created_at->addMinute(20);
+        return $this->ended_at??$this->created_at->addMinute($this->quiz->duration);
     }
 }

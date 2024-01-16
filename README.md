@@ -6,8 +6,7 @@ Le système de quiz est une application de quiz à choix multiples simple conçu
 ### Fonctionnalités
 
 1. **Limite de temps du quiz**
-    - Le quiz a une limite de temps prédéfinie de 20 minutes. Une fois ce délai écoulé, la session de l'étudiant pour l'examen expirera automatiquement.
-    (Il n'est pas encore disponible de choisir la durée du quiz .)
+    - Le quiz a une limite de temps definie par le professeur. Une fois ce délai écoulé, la session de l'étudiant pour l'examen expirera automatiquement.
 
 2. **Une seule tentative**
     - Chaque étudiant peut tenter le quiz une seule fois pour maintenir l'équité et prévenir la tricherie.

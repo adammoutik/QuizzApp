@@ -64,7 +64,7 @@ class ExamController extends Controller
             'ended_at' => null,
         ]);
 
-        dispatch(new CalculateExamScoreJob($exam))->delay(now()->addMinutes(20));
+        dispatch(new CalculateExamScoreJob($exam))->delay(now()->addMinutes($exam->quiz->duration??5));
 
         return redirect()->route('exams.show', $exam);
     }

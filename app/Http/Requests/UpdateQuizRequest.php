@@ -24,6 +24,7 @@ class UpdateQuizRequest extends FormRequest
     {
         return [
             'title' => 'required|string|min:3|max:255',
+            'duration' => 'required|integer';
         ];
     }
 }
